@@ -1,0 +1,93 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Sequential Analytics — Privacy-First Website Analytics",
+  description = "Lightweight, privacy-first analytics that give you the insights you need without the bloat. No cookies. No consent banners. Just clean data.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --cream: #f8fafc;
+    --cream-dark: #e2e8f0;
+    --ink: #0f172a;
+    --ink-mid: #1e293b;
+    --ink-light: #475569;
+    --ink-faint: #94a3b8;
+    --forest: #5850ec;
+    --forest-mid: #4338ca;
+    --forest-light: #6366f1;
+    --amber: #0d9488;
+    --amber-light: #14b8a6;
+    --amber-pale: #f0fdfa;
+    --red: #ef4444;
+    --white: #ffffff;
+
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
+    --font-mono: 'DM Mono', 'Courier New', monospace;
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 32px;
+
+    --shadow-sm: 0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04);
+    --shadow-md: 0 4px 16px rgba(15,23,42,0.10), 0 2px 6px rgba(15,23,42,0.06);
+    --shadow-lg: 0 16px 48px rgba(15,23,42,0.14), 0 4px 16px rgba(15,23,42,0.08);
+    --shadow-xl: 0 32px 80px rgba(15,23,42,0.18), 0 8px 24px rgba(15,23,42,0.10);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  ::selection {
+    background: var(--forest-light);
+    color: var(--cream);
+  }
+</style>

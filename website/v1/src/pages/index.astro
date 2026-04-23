@@ -1,0 +1,2348 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">S</span>
+        <span class="logo-text">Sequential</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="/docs">Docs</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="/login" class="btn-ghost">Log in</a>
+        <a href="/signup" class="btn-primary">Start free trial</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-bg-orb orb-1"></div>
+      <div class="hero-bg-orb orb-2"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            Privacy-first analytics · GDPR compliant by default
+          </div>
+          <h1 class="hero-headline">
+            Analytics that<br />
+            <em>respect</em> your<br />
+            visitors.
+          </h1>
+          <p class="hero-sub">
+            Sequential gives you the insights you need to grow—without cookies,
+            consent banners, or bloated scripts that slow your site down.
+            Just honest, beautiful data.
+          </p>
+          <div class="hero-cta">
+            <a href="/signup" class="btn-hero">
+              Start free — 30 days
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="/demo" class="btn-demo">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.25"/>
+                <path d="M6.5 5.5l4 2.5-4 2.5V5.5z" fill="currentColor"/>
+              </svg>
+              View live demo
+            </a>
+          </div>
+          <p class="hero-fine">No credit card required. Cancel any time.</p>
+        </div>
+
+        <div class="hero-dashboard" aria-hidden="true">
+          <div class="dashboard-window">
+            <div class="window-chrome">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="window-url">app.sequential.io / yoursite.com</span>
+            </div>
+            <div class="dashboard-body">
+              <div class="db-header">
+                <div class="db-site">
+                  <div class="db-site-dot"></div>
+                  <span>yoursite.com</span>
+                </div>
+                <div class="db-range">Last 30 days</div>
+              </div>
+
+              <div class="db-stats">
+                <div class="db-stat">
+                  <span class="stat-label">Unique visitors</span>
+                  <span class="stat-value">24,831</span>
+                  <span class="stat-delta positive">↑ 12%</span>
+                </div>
+                <div class="db-stat">
+                  <span class="stat-label">Pageviews</span>
+                  <span class="stat-value">81,204</span>
+                  <span class="stat-delta positive">↑ 8%</span>
+                </div>
+                <div class="db-stat">
+                  <span class="stat-label">Bounce rate</span>
+                  <span class="stat-value">38.2%</span>
+                  <span class="stat-delta positive">↓ 4%</span>
+                </div>
+                <div class="db-stat">
+                  <span class="stat-label">Visit duration</span>
+                  <span class="stat-value">3m 42s</span>
+                  <span class="stat-delta neutral">—</span>
+                </div>
+              </div>
+
+              <div class="db-chart">
+                <svg viewBox="0 0 480 100" preserveAspectRatio="none" class="chart-svg">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#5850ec" stop-opacity="0.18"/>
+                      <stop offset="100%" stop-color="#5850ec" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0,80 C20,75 40,60 80,55 C120,50 140,65 180,48 C220,32 240,28 280,35 C320,42 340,30 380,22 C420,14 460,18 480,15 L480,100 L0,100 Z" fill="url(#chartGrad)"/>
+                  <path d="M0,80 C20,75 40,60 80,55 C120,50 140,65 180,48 C220,32 240,28 280,35 C320,42 340,30 380,22 C420,14 460,18 480,15" fill="none" stroke="#5850ec" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div class="db-tables">
+                <div class="db-table">
+                  <div class="db-table-head">Top Pages</div>
+                  <div class="db-row"><span class="db-page">/</span><span class="db-num">9,241</span></div>
+                  <div class="db-row"><span class="db-page">/blog</span><span class="db-num">4,812</span></div>
+                  <div class="db-row"><span class="db-page">/pricing</span><span class="db-num">3,104</span></div>
+                  <div class="db-row"><span class="db-page">/docs</span><span class="db-num">2,891</span></div>
+                </div>
+                <div class="db-table">
+                  <div class="db-table-head">Top Sources</div>
+                  <div class="db-row"><span class="db-page">Google</span><span class="db-num">11,030</span></div>
+                  <div class="db-row"><span class="db-page">Direct</span><span class="db-num">7,240</span></div>
+                  <div class="db-row"><span class="db-page">Twitter</span><span class="db-num">3,890</span></div>
+                  <div class="db-row"><span class="db-page">Hacker News</span><span class="db-num">2,671</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-glow"></div>
+        </div>
+      </div>
+
+      <div class="hero-logos">
+        <span class="logos-label">Trusted by teams at</span>
+        <div class="logos-strip">
+          <span class="logo-pill">Stripe</span>
+          <span class="logo-pill">Notion</span>
+          <span class="logo-pill">Linear</span>
+          <span class="logo-pill">Vercel</span>
+          <span class="logo-pill">Railway</span>
+          <span class="logo-pill">Ghost</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="pillars" id="features">
+      <div class="section-inner">
+        <div class="section-label">Why Sequential</div>
+        <h2 class="section-headline">Built on three unbreakable principles.</h2>
+        <div class="pillars-grid">
+          <div class="pillar pillar-privacy">
+            <div class="pillar-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M14 2L4 6.5V13c0 5.5 4.3 10.7 10 12 5.7-1.3 10-6.5 10-12V6.5L14 2z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+                <path d="M9.5 14l3 3 6-6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Privacy by design</h3>
+            <p>
+              GDPR, CCPA, PECR compliant without lifting a finger. No cookies,
+              no personal data collected, no consent banners to annoy your visitors.
+              Privacy is the default, not an afterthought.
+            </p>
+            <div class="pillar-tags">
+              <span>No cookies</span>
+              <span>GDPR native</span>
+              <span>IP anonymized</span>
+            </div>
+          </div>
+          <div class="pillar pillar-speed">
+            <div class="pillar-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M14 8v6l3.5 3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 14h2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Featherlight script</h3>
+            <p>
+              Our tracking script is <strong>~2kB</strong>—roughly 45× lighter
+              than Google Analytics. Zero impact on your Core Web Vitals,
+              your SEO, or your visitors' experience.
+            </p>
+            <div class="pillar-comparison">
+              <div class="comp-bar-wrap">
+                <span class="comp-label">Sequential</span>
+                <div class="comp-bar-bg">
+                  <div class="comp-bar comp-bar-seq" style="width: 4%"></div>
+                </div>
+                <span class="comp-size">2kB</span>
+              </div>
+              <div class="comp-bar-wrap">
+                <span class="comp-label">GA4</span>
+                <div class="comp-bar-bg">
+                  <div class="comp-bar comp-bar-ga" style="width: 90%"></div>
+                </div>
+                <span class="comp-size">91kB</span>
+              </div>
+            </div>
+          </div>
+          <div class="pillar pillar-simple">
+            <div class="pillar-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <rect x="3" y="3" width="22" height="22" rx="4" stroke="currentColor" stroke-width="1.75"/>
+                <path d="M8 14h12M8 9h7M8 19h9" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>One screen. Everything.</h3>
+            <p>
+              No funnels to configure, no dashboards to build, no certifications
+              required. Open Sequential and instantly know how your site is
+              performing. That's the whole promise.
+            </p>
+            <div class="pillar-tags">
+              <span>Real-time</span>
+              <span>Zero training</span>
+              <span>Instant insight</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES DEEP-DIVE -->
+    <section class="features-alt">
+      <div class="section-inner">
+        <div class="features-alt-grid">
+
+          <div class="feat-block feat-block-realtime">
+            <div class="feat-content">
+              <div class="feat-num">01</div>
+              <h3>Real-time. Always.</h3>
+              <p>Watch visitors move through your site as it happens. No 48-hour processing delays. No sampling. Every event is counted, every second.</p>
+            </div>
+            <div class="feat-visual realtime-visual">
+              <div class="rt-pulse">
+                <span class="rt-dot"></span>
+                <span class="rt-ring rt-ring-1"></span>
+                <span class="rt-ring rt-ring-2"></span>
+              </div>
+              <div class="rt-counter">
+                <span class="rt-num">43</span>
+                <span class="rt-label">live right now</span>
+              </div>
+              <div class="rt-bars">
+                <span style="height: 40%"></span>
+                <span style="height: 60%"></span>
+                <span style="height: 35%"></span>
+                <span style="height: 80%"></span>
+                <span style="height: 55%"></span>
+                <span style="height: 70%"></span>
+                <span style="height: 45%"></span>
+                <span style="height: 90%"></span>
+                <span style="height: 65%"></span>
+                <span style="height: 50%"></span>
+                <span style="height: 75%"></span>
+                <span style="height: 85%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-block feat-block-events">
+            <div class="feat-content">
+              <div class="feat-num">02</div>
+              <h3>Custom event tracking</h3>
+              <p>Track anything that matters—button clicks, form submissions, checkout completions—with a single line of JavaScript.</p>
+            </div>
+            <div class="feat-visual events-visual">
+              <div class="event-stream">
+                <div class="event-item ev-1">
+                  <span class="ev-icon ev-green">✓</span>
+                  <span class="ev-name">checkout_complete</span>
+                  <span class="ev-time">just now</span>
+                </div>
+                <div class="event-item ev-2">
+                  <span class="ev-icon ev-amber">→</span>
+                  <span class="ev-name">signup_click</span>
+                  <span class="ev-time">3s ago</span>
+                </div>
+                <div class="event-item ev-3">
+                  <span class="ev-icon ev-green">✓</span>
+                  <span class="ev-name">form_submit</span>
+                  <span class="ev-time">8s ago</span>
+                </div>
+                <div class="event-item ev-4">
+                  <span class="ev-icon ev-amber">→</span>
+                  <span class="ev-name">video_play</span>
+                  <span class="ev-time">12s ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-block feat-block-utm">
+            <div class="feat-content">
+              <div class="feat-num">03</div>
+              <h3>UTM & campaign tracking</h3>
+              <p>Know exactly which campaigns, newsletters, and ads are driving real traffic. Full UTM support out of the box with zero configuration.</p>
+            </div>
+            <div class="feat-visual utm-visual">
+              <div class="source-bars">
+                <div class="src-row">
+                  <span class="src-name">google / cpc</span>
+                  <div class="src-bar-wrap">
+                    <div class="src-bar" style="width: 72%"></div>
+                  </div>
+                  <span class="src-pct">72%</span>
+                </div>
+                <div class="src-row">
+                  <span class="src-name">email / newsletter</span>
+                  <div class="src-bar-wrap">
+                    <div class="src-bar" style="width: 48%"></div>
+                  </div>
+                  <span class="src-pct">48%</span>
+                </div>
+                <div class="src-row">
+                  <span class="src-name">twitter / organic</span>
+                  <div class="src-bar-wrap">
+                    <div class="src-bar" style="width: 31%"></div>
+                  </div>
+                  <span class="src-pct">31%</span>
+                </div>
+                <div class="src-row">
+                  <span class="src-name">linkedin / paid</span>
+                  <div class="src-bar-wrap">
+                    <div class="src-bar" style="width: 19%"></div>
+                  </div>
+                  <span class="src-pct">19%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-block feat-block-ownership">
+            <div class="feat-content">
+              <div class="feat-num">04</div>
+              <h3>Your data, forever</h3>
+              <p>Historical data belongs to you. No sampling, no rolling windows, no data disappearing after 14 months. Your complete history stays intact.</p>
+            </div>
+            <div class="feat-visual ownership-visual">
+              <div class="timeline">
+                <div class="tl-year active">2024</div>
+                <div class="tl-bar active"></div>
+                <div class="tl-year active">2023</div>
+                <div class="tl-bar active"></div>
+                <div class="tl-year active">2022</div>
+                <div class="tl-bar active"></div>
+                <div class="tl-year active">2021</div>
+                <div class="tl-bar ga-dead"></div>
+                <div class="tl-year ga-dead">2020</div>
+                <div class="tl-label ga-dead-label">GA cuts off here ↑</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF / STATS -->
+    <section class="stats-section">
+      <div class="stats-bg"></div>
+      <div class="section-inner">
+        <div class="stats-headline">
+          Numbers that<br /><em>speak clearly.</em>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-big">2kB</span>
+            <span class="stat-desc">Script size. 45× lighter than GA4.</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-big">100%</span>
+            <span class="stat-desc">Data accuracy. No sampling, ever.</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-big">0</span>
+            <span class="stat-desc">Cookies used. Zero. None.</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-big">&lt;1s</span>
+            <span class="stat-desc">Time to first insight after setup.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-inner">
+        <div class="section-label">What people are saying</div>
+        <h2 class="section-headline">Makers who made the switch.</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial testi-featured">
+            <blockquote>
+              "I switched from Google Analytics six months ago and I've never
+              looked back. Sequential told me everything GA4 hid behind twelve
+              menus—in a single glance. My GDPR lawyer literally high-fived me."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av-1">AM</div>
+              <div>
+                <strong>Amara Mensah</strong>
+                <span>Founder, Loom Studio</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "The script is so small our Lighthouse scores actually improved
+              after we installed it. That never happens with analytics tools."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av-2">JK</div>
+              <div>
+                <strong>Jonas Krause</strong>
+                <span>Senior Engineer, Papertrail</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "Setup took four minutes. I'm not exaggerating. Paste a script tag,
+              done. Our marketing team now actually looks at analytics every day."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av-3">SR</div>
+              <div>
+                <strong>Sofia Reyes</strong>
+                <span>Head of Growth, Meadow</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "No cookie banner means our conversion rate went up immediately.
+              Turns out people click away when you nag them about privacy before
+              they've even seen your product."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av-4">TD</div>
+              <div>
+                <strong>Tom Delacroix</strong>
+                <span>Co-founder, Castor</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <blockquote>
+              "The GA importer brought over three years of historical data in
+              under two minutes. I expected it to be painful. It was genuinely
+              the smoothest migration I've ever done."
+            </blockquote>
+            <div class="testi-author">
+              <div class="testi-avatar av-5">PL</div>
+              <div>
+                <strong>Priya Lakshmi</strong>
+                <span>Product Manager, Fieldbook</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GA MIGRATION -->
+    <section class="migration-section">
+      <div class="section-inner migration-inner">
+        <div class="migration-content">
+          <div class="section-label">One-click migration</div>
+          <h2>Already on Google Analytics?<br /><em>Bring your history with you.</em></h2>
+          <p>
+            Our GA importer moves your Universal Analytics or GA4 historical data
+            into Sequential in minutes—not hours. Years of data, right where it belongs.
+          </p>
+          <a href="/import" class="btn-forest">Import from Google Analytics →</a>
+        </div>
+        <div class="migration-visual">
+          <div class="migration-arrow">
+            <div class="mig-from">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="8" fill="#E8F0FE"/>
+                <path d="M16 6l2.5 7H25l-5.5 4 2 7L16 20l-5.5 4 2-7L7 13h6.5L16 6z" fill="#4285F4"/>
+              </svg>
+              <span>Google Analytics</span>
+            </div>
+            <div class="mig-line">
+              <div class="mig-progress"></div>
+              <svg class="mig-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M5 10h10M11 6l4 4-4 4" stroke="#5850ec" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="mig-to">
+              <div class="mig-logo-s">S</div>
+              <span>Sequential</span>
+            </div>
+          </div>
+          <div class="mig-badge">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8l4 4 6-7" stroke="#5850ec" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Import complete — 847 days of data
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="section-inner">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-headline">Simple, transparent pricing.</h2>
+        <p class="pricing-sub">All plans include every feature. Pay only for scale.</p>
+
+        <div class="pricing-grid">
+          <div class="plan">
+            <div class="plan-header">
+              <div class="plan-name">Starter</div>
+              <div class="plan-price"><span class="plan-dollar">$</span>9<span class="plan-period">/mo</span></div>
+              <div class="plan-traffic">Up to 10k pageviews/mo</div>
+            </div>
+            <ul class="plan-features">
+              <li>Unlimited websites</li>
+              <li>Real-time dashboard</li>
+              <li>Custom event tracking</li>
+              <li>UTM campaign tracking</li>
+              <li>Forever data retention</li>
+              <li>Bot filtering</li>
+              <li>Email reports</li>
+            </ul>
+            <a href="/signup?plan=starter" class="btn-plan">Start free trial</a>
+          </div>
+
+          <div class="plan plan-featured">
+            <div class="plan-badge">Most popular</div>
+            <div class="plan-header">
+              <div class="plan-name">Growth</div>
+              <div class="plan-price"><span class="plan-dollar">$</span>19<span class="plan-period">/mo</span></div>
+              <div class="plan-traffic">Up to 100k pageviews/mo</div>
+            </div>
+            <ul class="plan-features">
+              <li>Everything in Starter</li>
+              <li>GA data importer</li>
+              <li>Public & private sharing</li>
+              <li>API access</li>
+              <li>Slack & email alerts</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="/signup?plan=growth" class="btn-plan btn-plan-featured">Start free trial</a>
+          </div>
+
+          <div class="plan">
+            <div class="plan-header">
+              <div class="plan-name">Business</div>
+              <div class="plan-price"><span class="plan-dollar">$</span>49<span class="plan-period">/mo</span></div>
+              <div class="plan-traffic">Up to 1M pageviews/mo</div>
+            </div>
+            <ul class="plan-features">
+              <li>Everything in Growth</li>
+              <li>Team members (5 seats)</li>
+              <li>SSO / SAML</li>
+              <li>Custom domains</li>
+              <li>SLA guarantee</li>
+              <li>Dedicated onboarding</li>
+            </ul>
+            <a href="/signup?plan=business" class="btn-plan">Start free trial</a>
+          </div>
+        </div>
+
+        <p class="pricing-note">
+          Need more volume? <a href="/enterprise">Talk to us about enterprise →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-final">
+      <div class="cta-inner">
+        <div class="cta-bg-text">Sequential</div>
+        <div class="section-label light">Get started today</div>
+        <h2>
+          Your data.<br />
+          Your visitors.<br />
+          <em>Your peace of mind.</em>
+        </h2>
+        <p>
+          Join thousands of teams who've ditched the complexity of Google Analytics
+          for something that actually makes sense.
+        </p>
+        <div class="cta-actions">
+          <a href="/signup" class="btn-cta-light">
+            Start free — 30 days
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/demo" class="btn-cta-ghost">View live demo</a>
+        </div>
+        <p class="cta-fine">30-day free trial · No credit card · Cancel anytime</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo logo-footer">
+          <span class="logo-mark">S</span>
+          <span class="logo-text">Sequential</span>
+        </a>
+        <p>Privacy-first analytics for the modern web.</p>
+        <p class="footer-compliance">
+          <span>GDPR</span>
+          <span>CCPA</span>
+          <span>PECR</span>
+          <span>ePrivacy</span>
+        </p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="/features">Features</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/changelog">Changelog</a>
+          <a href="/demo">Live demo</a>
+          <a href="/import">GA Importer</a>
+        </div>
+        <div class="footer-col">
+          <h4>Developers</h4>
+          <a href="/docs">Documentation</a>
+          <a href="/api">API Reference</a>
+          <a href="/sdk">SDKs</a>
+          <a href="/status">Status</a>
+          <a href="https://github.com/sequential">GitHub</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/careers">Careers</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4>Compare</h4>
+          <a href="/vs/google-analytics">vs Google Analytics</a>
+          <a href="/vs/plausible">vs Plausible</a>
+          <a href="/vs/fathom">vs Fathom</a>
+          <a href="/vs/mixpanel">vs Mixpanel</a>
+          <a href="/vs/matomo">vs Matomo</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Sequential Analytics, Inc.</span>
+      <span>Made with intention. No cookies ironic or otherwise.</span>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+/* ─── GLOBAL SECTION HELPERS ─────────────────────────────── */
+.section-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--forest-light);
+  margin-bottom: 14px;
+}
+
+.section-label.light { color: rgba(247,244,238,0.55); }
+
+.section-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--ink);
+  margin-bottom: 60px;
+}
+
+/* ─── NAV ─────────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(248,250,252,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.nav-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 30px;
+  height: 30px;
+  background: var(--forest);
+  color: var(--cream);
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  flex: 1;
+}
+
+.nav-links a {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--ink-mid);
+  transition: color 0.15s;
+}
+
+.nav-links a:hover { color: var(--forest); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-ghost {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s, background 0.15s;
+}
+
+.btn-ghost:hover { color: var(--forest); background: var(--cream-dark); }
+
+.btn-primary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  transition: background 0.18s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--forest-mid);
+  transform: translateY(-1px);
+}
+
+.nav-hamburger { display: none; }
+
+/* ─── HERO ─────────────────────────────────────────────────── */
+.hero {
+  padding-top: 80px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, var(--cream-dark) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--cream-dark) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.5;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black, transparent);
+}
+
+.hero-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(88,80,236,0.08) 0%, transparent 70%);
+  top: -100px;
+  right: -100px;
+}
+
+.orb-2 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99,102,241,0.06) 0%, transparent 70%);
+  bottom: 0;
+  left: 5%;
+}
+
+.hero-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 80px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 60px;
+  align-items: center;
+  flex: 1;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--forest-light);
+  margin-bottom: 24px;
+  padding: 6px 14px 6px 10px;
+  background: rgba(88,80,236,0.06);
+  border-radius: 99px;
+  border: 1px solid rgba(88,80,236,0.14);
+  width: fit-content;
+}
+
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--forest-light);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.0;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  animation: fadeUp 0.7s ease both;
+}
+
+.hero-headline em {
+  font-style: italic;
+  color: var(--forest);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+  max-width: 460px;
+  margin-bottom: 36px;
+  font-weight: 300;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--forest);
+  color: var(--cream);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 13px 24px;
+  border-radius: var(--radius-sm);
+  transition: background 0.18s, transform 0.15s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(30,61,47,0.25);
+}
+
+.btn-hero:hover {
+  background: var(--forest-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30,61,47,0.3);
+}
+
+.btn-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-mid);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--cream-dark);
+  background: var(--white);
+  transition: border-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.btn-demo:hover {
+  border-color: var(--forest-light);
+  color: var(--forest);
+  transform: translateY(-1px);
+}
+
+.hero-fine {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  margin-top: 14px;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+
+/* DASHBOARD WINDOW */
+.hero-dashboard {
+  position: relative;
+  animation: fadeUp 0.8s 0.15s ease both;
+}
+
+.dashboard-window {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl), 0 0 0 1px rgba(15,23,42,0.06);
+  overflow: hidden;
+  transform: perspective(1000px) rotateY(-3deg) rotateX(2deg);
+  transition: transform 0.4s ease;
+}
+
+.dashboard-window:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.window-chrome {
+  background: #f1f5f9;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.dot-red { background: #FF5F57; }
+.dot-yellow { background: #FFBD2E; }
+.dot-green { background: #28C840; }
+
+.window-url {
+  flex: 1;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  background: var(--cream);
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+.dashboard-body {
+  padding: 20px;
+}
+
+.db-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.db-site {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+.db-site-dot {
+  width: 8px;
+  height: 8px;
+  background: #22C55E;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.2);
+}
+
+.db-range {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  background: var(--cream);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--cream-dark);
+}
+
+.db-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.db-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.stat-label {
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--font-mono);
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.stat-delta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.stat-delta.positive { color: #16A34A; }
+.stat-delta.neutral { color: var(--ink-faint); }
+
+.db-chart {
+  height: 80px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgba(88,80,236,0.04);
+}
+
+.chart-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.db-tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.db-table-head {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-faint);
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.db-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  font-size: 0.78rem;
+}
+
+.db-page { color: var(--ink-mid); }
+
+.db-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-light);
+}
+
+.dashboard-glow {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80px;
+  background: radial-gradient(ellipse, rgba(88,80,236,0.15) 0%, transparent 70%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+/* HERO LOGOS */
+.hero-logos {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.logos-label {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}
+
+.logos-strip {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.logo-pill {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-light);
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  padding: 5px 14px;
+  border-radius: 99px;
+  letter-spacing: 0.01em;
+}
+
+/* ─── PILLARS ──────────────────────────────────────────────── */
+.pillars {
+  padding: 100px 0;
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.pillar {
+  padding: 36px;
+  border-radius: var(--radius-lg);
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pillar:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(88,80,236,0.08);
+  color: var(--forest);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pillar h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.pillar p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+  margin-bottom: 20px;
+}
+
+.pillar-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pillar-tags span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--forest);
+  background: rgba(88,80,236,0.07);
+  border: 1px solid rgba(88,80,236,0.16);
+  padding: 3px 10px;
+  border-radius: 99px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pillar-comparison { display: flex; flex-direction: column; gap: 10px; }
+
+.comp-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+}
+
+.comp-label { width: 80px; color: var(--ink-mid); font-size: 0.76rem; }
+
+.comp-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: var(--cream-dark);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.comp-bar {
+  height: 100%;
+  border-radius: 99px;
+}
+
+.comp-bar-seq { background: var(--forest); }
+.comp-bar-ga { background: #cbd5e1; }
+
+.comp-size {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-light);
+  width: 36px;
+  text-align: right;
+}
+
+/* ─── FEATURES ALT ──────────────────────────────────────────── */
+.features-alt {
+  padding: 100px 0;
+}
+
+.features-alt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.feat-block {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.feat-block:hover { box-shadow: var(--shadow-md); }
+
+.feat-num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.feat-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.feat-content p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+}
+
+/* REALTIME VISUAL */
+.realtime-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.rt-pulse {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rt-dot {
+  width: 12px;
+  height: 12px;
+  background: #22C55E;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.rt-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid #22C55E;
+  animation: ring-pulse 2s ease-out infinite;
+}
+
+.rt-ring-1 { width: 24px; height: 24px; animation-delay: 0s; }
+.rt-ring-2 { width: 32px; height: 32px; animation-delay: 0.5s; }
+
+@keyframes ring-pulse {
+  0% { opacity: 0.8; transform: scale(0.7); }
+  100% { opacity: 0; transform: scale(1); }
+}
+
+.rt-counter {
+  text-align: center;
+}
+
+.rt-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--forest);
+  line-height: 1;
+}
+
+.rt-label {
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.rt-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 48px;
+}
+
+.rt-bars span {
+  flex: 1;
+  background: var(--forest);
+  border-radius: 2px 2px 0 0;
+  opacity: 0.7;
+  animation: bar-bounce 1.5s ease-in-out infinite alternate;
+}
+
+.rt-bars span:nth-child(2) { animation-delay: 0.15s; }
+.rt-bars span:nth-child(3) { animation-delay: 0.3s; }
+.rt-bars span:nth-child(4) { animation-delay: 0.45s; }
+.rt-bars span:nth-child(5) { animation-delay: 0.6s; }
+.rt-bars span:nth-child(6) { animation-delay: 0.75s; }
+.rt-bars span:nth-child(7) { animation-delay: 0.9s; }
+.rt-bars span:nth-child(8) { animation-delay: 1.05s; }
+
+@keyframes bar-bounce {
+  from { opacity: 0.4; transform: scaleY(0.7); }
+  to { opacity: 0.9; transform: scaleY(1); }
+}
+
+/* EVENTS VISUAL */
+.event-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--cream-dark);
+  font-size: 0.78rem;
+  animation: slideIn 0.4s ease both;
+}
+
+.ev-1 { animation-delay: 0s; }
+.ev-2 { animation-delay: 0.1s; }
+.ev-3 { animation-delay: 0.2s; }
+.ev-4 { animation-delay: 0.3s; }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.ev-icon {
+  font-size: 0.9rem;
+  font-weight: 600;
+  width: 20px;
+  text-align: center;
+}
+
+.ev-green { color: #16A34A; }
+.ev-amber { color: var(--amber); }
+
+.ev-name {
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  color: var(--ink);
+  flex: 1;
+}
+
+.ev-time {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+}
+
+/* UTM VISUAL */
+.source-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.src-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+}
+
+.src-name {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-mid);
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.src-bar-wrap {
+  flex: 1;
+  height: 8px;
+  background: var(--cream-dark);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.src-bar {
+  height: 100%;
+  background: linear-gradient(to right, var(--forest), var(--forest-light));
+  border-radius: 99px;
+  transition: width 1s ease;
+}
+
+.src-pct {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-light);
+  width: 32px;
+  text-align: right;
+}
+
+/* OWNERSHIP VISUAL */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tl-year {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--forest);
+  font-weight: 500;
+}
+
+.tl-year.ga-dead { color: var(--ink-faint); text-decoration: line-through; }
+
+.tl-bar {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, var(--forest), var(--forest-light));
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.tl-bar.ga-dead {
+  background: var(--cream-dark);
+  opacity: 1;
+}
+
+.tl-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #ef4444;
+  margin-top: 4px;
+  letter-spacing: 0.04em;
+}
+
+/* ─── STATS SECTION ────────────────────────────────────────── */
+.stats-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--forest);
+}
+
+.stats-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.stats-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: rgba(247,244,238,0.85);
+  line-height: 1.1;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.stats-headline em {
+  color: var(--amber-light);
+  font-style: italic;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 36px 28px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: var(--radius-lg);
+  transition: background 0.2s;
+}
+
+.stat-card:hover { background: rgba(255,255,255,0.14); }
+
+.stat-big {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: var(--cream);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stat-desc {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.5;
+}
+
+/* ─── TESTIMONIALS ──────────────────────────────────────────── */
+.testimonials {
+  padding: 100px 0;
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.testimonial {
+  padding: 32px;
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-lg);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.testimonial:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.testi-featured {
+  grid-row: span 2;
+  background: var(--forest);
+  border-color: var(--forest-mid);
+}
+
+.testi-featured blockquote { color: rgba(248,250,252,0.92); }
+
+.testimonial blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink-mid);
+  margin-bottom: 24px;
+}
+
+.testi-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testi-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+}
+
+.av-1 { background: var(--amber-light); color: var(--ink); }
+.av-2 { background: rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); }
+.av-3 { background: #e0e7ff; color: var(--forest); }
+.av-4 { background: #dbeafe; color: var(--ink-mid); }
+.av-5 { background: #ede9fe; color: var(--forest-mid); }
+
+.testi-author strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.testi-featured .testi-author strong { color: var(--cream); }
+.testi-featured .testi-author span { color: rgba(248,250,252,0.65); }
+
+.testi-author span {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+}
+
+/* ─── MIGRATION ─────────────────────────────────────────────── */
+.migration-section {
+  padding: 100px 0;
+  border-top: 1px solid var(--cream-dark);
+}
+
+.migration-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.migration-content .section-label { margin-bottom: 16px; }
+
+.migration-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.migration-content h2 em {
+  color: var(--forest);
+  font-style: italic;
+}
+
+.migration-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+  margin-bottom: 32px;
+}
+
+.btn-forest {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.18s, transform 0.15s;
+}
+
+.btn-forest:hover {
+  background: var(--forest-mid);
+  transform: translateY(-1px);
+}
+
+.migration-arrow {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 40px;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-xl);
+  margin-bottom: 16px;
+}
+
+.mig-from, .mig-to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--ink-mid);
+  font-weight: 500;
+}
+
+.mig-logo-s {
+  width: 32px;
+  height: 32px;
+  background: var(--forest);
+  color: var(--cream);
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mig-line {
+  flex: 1;
+  position: relative;
+  height: 2px;
+  background: linear-gradient(to right, var(--cream-dark), var(--forest-light));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mig-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--forest);
+  border-radius: 99px;
+  animation: progress-fill 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes progress-fill {
+  from { width: 20%; }
+  to { width: 95%; }
+}
+
+.mig-chevron { position: absolute; right: -10px; }
+
+.mig-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(88,80,236,0.08);
+  color: var(--forest);
+  border: 1px solid rgba(88,80,236,0.18);
+  padding: 8px 16px;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+
+/* ─── PRICING ───────────────────────────────────────────────── */
+.pricing {
+  padding: 100px 0;
+  background: var(--white);
+  border-top: 1px solid var(--cream-dark);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.pricing-sub {
+  font-size: 1rem;
+  color: var(--ink-light);
+  margin-top: -48px;
+  margin-bottom: 56px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.plan {
+  padding: 36px;
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.plan-featured {
+  background: var(--forest);
+  border-color: var(--forest-mid);
+  transform: scale(1.02);
+  box-shadow: var(--shadow-xl);
+}
+
+.plan-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--amber);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
+.plan-header { margin-bottom: 28px; }
+
+.plan-name {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 12px;
+}
+
+.plan-featured .plan-name { color: rgba(247,244,238,0.5); }
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.plan-featured .plan-price { color: var(--cream); }
+
+.plan-dollar {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.plan-price {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.plan-period {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-faint);
+}
+
+.plan-featured .plan-period { color: rgba(247,244,238,0.4); }
+
+.plan-traffic {
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+}
+
+.plan-featured .plan-traffic { color: rgba(247,244,238,0.4); }
+
+.plan-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin-bottom: 28px;
+}
+
+.plan-features li {
+  font-size: 0.875rem;
+  color: var(--ink-mid);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-featured .plan-features li { color: rgba(247,244,238,0.75); }
+
+.plan-features li::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(30,61,47,0.1);
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 7l3 3 5-5' stroke='%235850ec' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.plan-featured .plan-features li::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 7l3 3 5-5' stroke='%23f8fafc' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.btn-plan {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  color: var(--ink);
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-plan:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-plan-featured {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--white);
+}
+
+.btn-plan-featured:hover {
+  background: var(--amber-light);
+  border-color: var(--amber-light);
+  box-shadow: 0 4px 16px rgba(13,148,136,0.35);
+}
+
+.pricing-note {
+  text-align: center;
+  margin-top: 36px;
+  font-size: 0.875rem;
+  color: var(--ink-faint);
+}
+
+.pricing-note a {
+  color: var(--forest);
+  font-weight: 500;
+  border-bottom: 1px solid rgba(30,61,47,0.3);
+  transition: border-color 0.15s;
+}
+
+.pricing-note a:hover { border-color: var(--forest); }
+
+/* ─── FINAL CTA ─────────────────────────────────────────────── */
+.cta-final {
+  padding: 120px 0;
+  background: var(--forest);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 18vw, 18rem);
+  color: rgba(255,255,255,0.03);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.04em;
+}
+
+.cta-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px;
+  text-align: center;
+  position: relative;
+}
+
+.cta-inner h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.08;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.cta-inner h2 em {
+  font-style: italic;
+  color: var(--amber-light);
+}
+
+.cta-inner p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 40px;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn-cta-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream);
+  color: var(--forest);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s, transform 0.15s;
+}
+
+.btn-cta-light:hover {
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 13px 22px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-cta-ghost:hover {
+  border-color: rgba(255,255,255,0.55);
+  color: var(--cream);
+}
+
+.cta-fine {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.06em;
+}
+
+/* ─── FOOTER ────────────────────────────────────────────────── */
+.footer {
+  background: var(--ink);
+  padding: 72px 0 0;
+}
+
+.footer-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 32px 56px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 64px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo-footer .logo-mark {
+  background: var(--forest-light);
+}
+
+.logo-footer .logo-text { color: var(--cream); }
+
+.footer-brand p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  margin-top: 14px;
+}
+
+.footer-compliance {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 16px !important;
+}
+
+.footer-compliance span {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.footer-col h4 {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 16px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+  padding: 4px 0;
+  transition: color 0.15s;
+}
+
+.footer-col a:hover { color: var(--cream); }
+
+.footer-bottom {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  font-family: var(--font-mono);
+}
+
+/* ─── ANIMATIONS ────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── RESPONSIVE ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 60px 32px 40px;
+  }
+
+  .hero-content { align-items: center; }
+  .hero-eyebrow { margin: 0 auto 24px; }
+  .hero-sub { margin: 0 auto 36px; }
+  .hero-cta { justify-content: center; }
+  .hero-fine { text-align: center; }
+
+  .hero-dashboard {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .dashboard-window { transform: none; }
+
+  .pillars-grid { grid-template-columns: 1fr; gap: 24px; }
+
+  .features-alt-grid { grid-template-columns: 1fr; }
+  .feat-block { grid-template-columns: 1fr; gap: 24px; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testi-featured { grid-column: span 2; }
+
+  .migration-inner { grid-template-columns: 1fr; gap: 40px; }
+
+  .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .plan-featured { transform: none; }
+
+  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  .footer-cols { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .section-inner { padding: 0 20px; }
+  .hero-inner { padding: 40px 20px 32px; }
+  .hero-logos { padding: 0 20px 60px; flex-direction: column; gap: 16px; }
+
+  .nav-links { display: none; }
+  .nav-inner { gap: 16px; }
+
+  .db-stats { grid-template-columns: repeat(2, 1fr); }
+  .db-tables { grid-template-columns: 1fr; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testi-featured { grid-column: auto; }
+
+  .footer-cols { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+  .cta-inner h2 { font-size: 2.5rem; }
+}
+</style>
+
+<script>
+// Scroll-triggered entrance animations
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  },
+  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+);
+
+document.querySelectorAll(
+  '.pillar, .feat-block, .stat-card, .testimonial, .plan'
+).forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
+  observer.observe(el);
+});
+
+// Add stagger to sibling groups
+document.querySelectorAll('.pillars-grid, .stats-grid, .pricing-grid').forEach(grid => {
+  Array.from(grid.children).forEach((child, i) => {
+    (child as HTMLElement).style.transitionDelay = `${i * 0.08}s`;
+  });
+});
+
+document.addEventListener('animationend', () => {}, { once: true });
+
+// Handle visible class
+const style = document.createElement('style');
+style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
+document.head.appendChild(style);
+
+// Animated counter for realtime widget
+function animateCounter(el: HTMLElement, target: number) {
+  let current = Math.floor(target * 0.8);
+  const step = () => {
+    current += Math.ceil((target - current) * 0.1);
+    el.textContent = current.toString();
+    if (current < target) requestAnimationFrame(step);
+    else el.textContent = target.toString();
+  };
+  requestAnimationFrame(step);
+}
+
+const rtNum = document.querySelector('.rt-num') as HTMLElement;
+if (rtNum) {
+  setInterval(() => {
+    const newVal = 38 + Math.floor(Math.random() * 15);
+    animateCounter(rtNum, newVal);
+  }, 3000);
+}
+</script>
